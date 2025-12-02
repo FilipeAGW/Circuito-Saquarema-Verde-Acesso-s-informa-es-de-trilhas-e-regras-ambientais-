@@ -3,7 +3,7 @@ Acesso às informações de trilhas e regras ambientais
 Equipe de Desenvolvimento:
 Turma 2024.01 
 
-Filipe Amaral Gomes Waldhelm
+Aluno: Filipe Amaral Gomes Waldhelm
 
 Situação Problema.
 Desenvolver um projeto focado em back-end de Acesso às informações de trilhas e regras ambientais que permita aos usuários visualizar e se atualizar das regras e recomendações para os interressados no tema
