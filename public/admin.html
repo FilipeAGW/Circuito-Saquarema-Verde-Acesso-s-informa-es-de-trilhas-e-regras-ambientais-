@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Admin – Saquarema Verde</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+    h2 { color: #1b5e20; }
+    input, textarea, select {
+      width: 100%; padding: 8px; margin: 5px 0;
+    }
+    button {
+      background: #1b5e20; color: white; border: none;
+      padding: 10px 15px; cursor: pointer;
+      margin-top: 10px;
+    }
+    .card { background: white; padding: 15px; border-radius: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>Admin – Saquarema Verde</h1>
+
+  <!-- LOGIN -->
+  <div class="card">
+    <h2>Login</h2>
+    <input id="loginUser" placeholder="Usuário">
+    <input id="loginPass" placeholder="Senha" type="password">
+    <button onclick="login()">Entrar</button>
+    <p id="loginStatus"></p>
+  </div>
+
+  <!-- TRILHAS -->
+  <div class="card">
+    <h2>Cadastrar Trilha</h2>
+    <input id="tNome" placeholder="Nome da trilha">
+    <textarea id="tDesc" placeholder="Descrição"></textarea>
+    <textarea id="tRules" placeholder="Regras ambientais"></textarea>
+    <input id="tStart" placeholder="Início da temporada (ex: 01/06)">
+    <input id="tEnd" placeholder="Fim da temporada (ex: 30/09)">
+    <select id="tAtiva">
+      <option value="true">Aberta</option>
+      <option value="false">Fechada</option>
+    </select>
+    <button onclick="criarTrilha()">Cadastrar</button>
+  </div>
+
+  <!-- Lugares -->
+  <div class="card">
+    <h2>Cadastrar Lugar Natural</h2>
+    <input id="lNome" placeholder="Nome">
+    <textarea id="lDesc" placeholder="Descrição"></textarea>
+    <textarea id="lRules" placeholder="Regras"></textarea>
+    <button onclick="criarLugar()">Cadastrar</button>
+  </div>
+
+  <!-- Recomendações -->
+  <div class="card">
+    <h2>Cadastrar Recomendação Ambiental</h2>
+    <input id="rTitulo" placeholder="Título">
+    <textarea id="rTexto" placeholder="Texto"></textarea>
+    <button onclick="criarRecomendacao()">Cadastrar</button>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
